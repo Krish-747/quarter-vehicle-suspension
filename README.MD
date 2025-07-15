@@ -15,13 +15,27 @@ This is a simulation of a quarter vehicles suspension as it is subjected to a ra
 - Damping Force
 - Control Force from the PID Controller (Only in active suspension)
 
+### Constants
+These values in the *constant* can be changed to create differet simulations
+- Mass
+- Spring Constant
+- Damping Constant
+- Gravitational Constant
+- Spring Length
+
+These are only for the PID Controller
+- Proportional Gain (Kp)
+- Integral Gain (Ki)
+- Derivative Gain (Kd)
+---
+
 ## Passive Suspension
 Executing `Passive Suspension.py` simulates a basic suspension system with damping. The values can be modified in the *constant* section
 
 ## Active Suspension
-Executing `Active Suspension.py` simulates a PID controlled active suspension system to maintain the set ride height. However the gains are not optimised and are just set randomly
+Executing `Active Suspension.py` simulates a PID controlled active suspension system to maintain the set ride height. The control force adjusts force based on the Proportional Error, Accumulated Error and Derivative Error. However the gains (Ki, Kp, Kd) are not optimised and are just set values. 
 
 ## Comparison
 To visualise the comparison between the Active and Passive Suspension, execute `Comparison.py` which shows the difference between the active and passive suspension on the same road disturbance.
 
-![Comparison between Passive and Active Suspension](/Comparison%20Code.png)
+![Comparison between Passive and Active Suspension](/Comparison%20of%20Suspension.png)
