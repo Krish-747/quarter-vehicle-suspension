@@ -17,11 +17,14 @@ This is a simulation of a quarter vehicles suspension as it is subjected to a ra
 
 ### Constants
 These values in the *constant* can be changed to create differet simulations
-- Mass
-- Spring Constant
-- Damping Constant
-- Gravitational Constant
-- Spring Length
+- Mass [`mass`]
+- Spring Constant [`spring_constant`]
+- Damping Constant [`damping_constant`]
+- Gravitational Constant [`g`]
+- Spring Length [`spring_length`]
+- Time [`total_time_ms`]
+- Time Intervals (Increased value increases the *noisiness* of the road profile) [`time_intervals`]
+- Road Height range [`height_range`]
 
 These are only for the PID Controller
 - Proportional Gain (Kp)
